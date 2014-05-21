@@ -10,7 +10,7 @@ assist from the program.  The db.use() method determines what dbname (in db.dbna
 For example, you will typically do something like:
 
 ```javascript
-var MongoDB = require('MongoDB').MongoDB,
+var MongoDB = require('decaf-mongodb').MongoDB,
     db = new MongoDB('dbname');
 
 db.use('collection1', 'collection2', 'collection3' ...);
