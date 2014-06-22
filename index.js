@@ -10,9 +10,13 @@
 
 /*global decaf, exports, require, JSON: true */
 
+// The Java driver
 importClass(com.mongodb.Mongo);
+
+// BSON conversion
 importClass(com.mongodb.jvm.BSON);
 
+// JSON converstion with support for MongoDB extended notation
 JSON = com.threecrickets.jvm.json.JSON;
 JSON.implementation = new com.mongodb.jvm.MongoRhinoJsonImplementation();
 
