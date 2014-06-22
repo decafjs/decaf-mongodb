@@ -10,7 +10,9 @@
 
 /*global decaf, exports, require, JSON: true */
 
-JSON = com.threecrickets.jvm.json.JSON
+var BSON = com.mongodb.jvm.BSON;
+
+JSON = com.threecrickets.jvm.json.JSON;
 JSON.implementation = new com.mongodb.jvm.MongoRhinoJsonImplementation();
 
 decaf.extend(exports, {
