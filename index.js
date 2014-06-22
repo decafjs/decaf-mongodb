@@ -8,7 +8,10 @@
 
 "use strict";
 
-/*global decaf, exports, require */
+/*global decaf, exports, require, JSON: true */
+
+JSON = com.threecrickets.jvm.json.JSON
+JSON.implementation = new com.mongodb.jvm.MongoRhinoJsonImplementation();
 
 decaf.extend(exports, {
     MongoDB: require('lib/MongoDB').MongoDB,
