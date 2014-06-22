@@ -18,7 +18,7 @@ importClass(com.mongodb.jvm.BSON);
 
 // JSON converstion with support for MongoDB extended notation
 JSON = com.threecrickets.jvm.json.JSON;
-//JSON.implementation = new Packages.com.mongodb.jvm.MongoRhinoJsonImplementation();
+JSON.implementation = new Packages.com.mongodb.jvm.rhino.MongoRhinoJsonImplementation();
 
 decaf.extend(exports, {
     MongoDB: require('lib/MongoDB').MongoDB,
