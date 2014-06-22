@@ -10,7 +10,8 @@
 
 /*global decaf, exports, require, JSON: true */
 
-var BSON = com.mongodb.jvm.BSON;
+importClass(com.mongodb.Mongo);
+importClass(com.mongodb.jvm.BSON);
 
 JSON = com.threecrickets.jvm.json.JSON;
 JSON.implementation = new com.mongodb.jvm.MongoRhinoJsonImplementation();
