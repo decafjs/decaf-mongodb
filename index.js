@@ -10,6 +10,7 @@
 
 /*global decaf, exports, require, JSON: true */
 
+global.ISODate = java.util.Date;
 
 decaf.extend(exports, {
     MongoDB: require('lib/MongoDB').MongoDB,
