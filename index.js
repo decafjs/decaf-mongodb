@@ -13,6 +13,8 @@
 global.ISODate = java.util.Date;
 
 decaf.extend(exports, {
+    serialize: require('lib/BSON').serialize,
+    deserialize: require('lib/BSON').deserialize,
     MongoDB: require('lib/MongoDB').MongoDB,
     Collection: require('lib/Collection').Collection,
     Cursor: require('lib/Cursor').Cursor,
